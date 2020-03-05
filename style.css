@@ -1,0 +1,15 @@
+.navbar-brand {
+    background-color: #444;
+    padding: 20px 35px;
+    margin-left: 5%;
+    color: white !important;
+    font-size: 26px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.last {
+    margin-right: 50px;
+}
