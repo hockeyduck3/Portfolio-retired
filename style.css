@@ -15,7 +15,7 @@ body {
 
 .navbar {
     padding: 0;
-    border-bottom: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid #444;
 }
 
 .navbar-nav, .nav-link, button {
@@ -30,11 +30,10 @@ main {
 
 .card {
     border: 3px solid #444;
-    background: rgb(255, 255, 255);
 }
 
 img {
-    width: 30%;
+    width: 35%;
     float: left;
     margin-right: 2%;
     border-radius: 5%;
