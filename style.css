@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     background-color: rgb(221, 221, 221);
     min-height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -13,11 +14,14 @@ body {
 /* Nav / Header */
 .navbar-brand {
     background-color: #444;
-    padding: 20px 35px;
+    padding: 20px 45px;
     margin-left: 5%;
-    color: white !important;
-    font-size: 26px;
+    font-size: 30px;
     font-family: 'Yellowtail', cursive;;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
 }
 
 .navbar {
@@ -78,8 +82,25 @@ footer p{
 
 /* Media */
 
+/* Tablets */
 @media(max-width: 991px){
+    /* Navbar */
     .navbar-nav, .nav-link, button {
         padding-left: 5%;
+        font-size: 18px;
+    }
+
+    .nav-link{
+        margin: 5px;
+    }
+}
+
+/* Mobile */
+@media(max-width: 640px) {
+    /* Main section */
+    img {
+        float: none;
+        margin: 5px 0px 10px 5px;
+        width: 95%;
     }
 }
