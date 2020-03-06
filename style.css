@@ -4,6 +4,7 @@
     margin-left: 5%;
     color: white !important;
     font-size: 26px;
+    font-family: 'Yellowtail', cursive;;
 }
 
 .navbar {
@@ -22,4 +23,8 @@ button {
 
 main {
     margin-top: 5%;
+}
+
+.card {
+    border: 3px solid rgba(0,0,0,.125);
 }
