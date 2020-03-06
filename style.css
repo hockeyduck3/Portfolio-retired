@@ -1,7 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     overflow-x: hidden;
     background-color: rgb(221, 221, 221);
-    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Nav / Header */
@@ -29,7 +35,7 @@ body {
 
 /* Main section */
 main {
-    margin-top: 4%;
+    margin: 45px 5%;
 }
 
 main p {
@@ -38,10 +44,6 @@ main p {
 
 .card {
     border: 3px solid #444;
-}
-
-.container-fluid {
-    width: 90%;
 }
 
 img {
@@ -60,8 +62,7 @@ hr {
 /* Footer */
 
 footer {
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     height: 4.5rem;
     width: 100%;
     background-color: #444;
