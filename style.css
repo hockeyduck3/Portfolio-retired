@@ -35,5 +35,12 @@ main {
 img {
     width: 30%;
     float: left;
-    padding-right: 2%;
+    margin-right: 2%;
+    border-radius: 5%;
+}
+
+hr {
+    height: 2px;
+    background-color: #444;
+    border: none;
 }
