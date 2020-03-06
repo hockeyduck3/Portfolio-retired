@@ -24,6 +24,10 @@ body {
     color: #fff;
 }
 
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: #fff;
+}
+
 .navbar {
     padding: 0;
     border-bottom: 1px solid #444;
