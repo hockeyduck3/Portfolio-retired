@@ -1,5 +1,6 @@
 body {
     overflow: hidden;
+    background-color: rgb(221, 221, 221);
 }
 
 /* Nav / Header */
@@ -17,13 +18,9 @@ body {
     border-bottom: 1px solid rgb(221, 221, 221);
 }
 
-.navbar-nav, .nav-link {
+.navbar-nav, .nav-link, button {
     padding-left: 5%;
     margin-right: 30px;
-}
-
-.last {
-    margin-right: 50px;
 }
 
 /* Main section */
@@ -32,7 +29,8 @@ main {
 }
 
 .card {
-    border: 3px solid rgba(0,0,0,.125);
+    border: 3px solid #444;
+    background: rgb(255, 255, 255);
 }
 
 img {
@@ -54,10 +52,15 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 60px;
+    height: 4.5rem;
     width: 100%;
     background-color: #444;
     color: white;
     text-align: center;
     border-top: 3px solid rgb(145, 145, 145);
-  }
+}
+
+footer p{
+    margin: 1px 0 0 0;
+    padding: 5px 0 0 2px;
+}
