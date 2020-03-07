@@ -89,6 +89,10 @@ main button:hover {
     border: 3px solid #444;
 }
 
+.card-body {
+    padding: 1rem;
+}
+
 img {
     width: 25%;
     float: left;
@@ -100,6 +104,12 @@ hr {
     height: 2px;
     background-color: #444;
     border: none;
+}
+
+.btn {
+    background-color: #444;
+    border-color: #444;
+    margin-top: 10px;
 }
 
 /* Footer */
