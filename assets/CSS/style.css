@@ -166,6 +166,7 @@ footer p{
         display: flex;
         margin: 0;
     }
+    
 }
 
 /* Mobile */
@@ -181,6 +182,10 @@ footer p{
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+
+    .media-h1 {
+        margin: 5% 2%;
     }
 
     .mr-3, .mx-3 {
