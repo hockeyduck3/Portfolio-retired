@@ -90,7 +90,12 @@ main button:hover {
 }
 
 .card-body {
-    padding: 1rem;
+    padding: 1.04rem;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 img {
@@ -110,6 +115,10 @@ hr {
     background-color: #444;
     border-color: #444;
     margin-top: 10px;
+}
+
+.form-control {
+    border-color: black;
 }
 
 /* Footer */
