@@ -117,6 +117,10 @@ hr {
     margin-top: 10px;
 }
 
+.form-control {
+    border-color: black;
+}
+
 .col-md-3 img {
     border-radius: 10px 10px 0px 0;
     width: 100%;
