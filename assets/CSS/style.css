@@ -117,17 +117,21 @@ hr {
     margin-top: 10px;
 }
 
-.form-control {
-    border-color: black;
+.col-md-3 img {
+    border-radius: 10px 10px 0px 0;
+    width: 100%;
 }
 
-.mr-3 {
-    border-radius: 10px;
+.col-md-3 p {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
 }
 
-.media {
-   display: inline-flex;
-   margin-right: 100px;
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 35px;
 }
 
 /* Footer */
@@ -178,22 +182,7 @@ footer p{
         width: 95%;
     }
 
-    .media {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .media-h1 {
-        margin: 5% 2%;
-    }
-
-    .mr-3, .mx-3 {
-        width: 95%;
-        margin: 2% 10% 5% 2%;
-    }
-
-    .media-body {
-        margin-left: 2%;
+    .col-md-3 p {
+        margin-bottom: 35px;
     }
 }
