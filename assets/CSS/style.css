@@ -98,7 +98,7 @@ main button:hover {
     padding-left: 0;
 }
 
-img {
+#Hello {
     width: 25%;
     float: left;
     margin-right: 2%;
@@ -119,6 +119,15 @@ hr {
 
 .form-control {
     border-color: black;
+}
+
+.mr-3 {
+    border-radius: 10px;
+}
+
+.media {
+   display: inline-flex;
+   margin-right: 100px;
 }
 
 /* Footer */
@@ -151,14 +160,35 @@ footer p{
     .nav-link{
         margin: 5px;
     }
+
+    /* Main Section */
+    .media {
+        display: flex;
+        margin: 0;
+    }
 }
 
 /* Mobile */
 @media(max-width: 640px) {
     /* Main section */
-    img {
+    #Hello {
         float: none;
         margin: 5px 0px 25px 5px;
         width: 95%;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .mr-3, .mx-3 {
+        width: 95%;
+        margin: 2% 10% 5% 2%;
+    }
+
+    .media-body {
+        margin-left: 2%;
     }
 }
