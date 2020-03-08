@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LJ's | Portfolio</title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 
 <html>
 <body>
     <header>
-        <h1>LJ Spencer</h1>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">About</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">LJ Spencer</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
                 </li>
-                <li>
-                    <a href="#">Portfolio</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link last" href="contact.html">Contact</a>
                 </li>
-            </ul>
-        </nav>
+              </ul>
+            </div>
+          </nav>
     </header>
+
+    <div class="container-fluid">
+        <main class="card">
+            <section class="card-body">
+                <h2>My Portfolio</h2>
+
+                <hr class="line">
+                
+                <ul class="list-unstyled">
+                    <li class="media">
+                      <img src="https:/placehold.it/150x150" class="mr-3" alt="placeholder">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">Coming soon!</h5>
+                        Description also coming soon! 🎉
+                      </div>
+                    </li>
+                    <li class="media my-4">
+                      <img src="https:/placehold.it/150x150" class="mr-3" alt="placeholder">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">Coming soon!</h5>
+                        Description also coming soon! 🎉
+                      </div>
+                    </li>
+                  </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Made with &hearts; in SLC.</p>
+        <p id="copy">&copy; Copyright 2020.</p>
+      </footer>
+  
+      <script src="./assets/Javascript/code.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
 
