@@ -5,5 +5,5 @@ document.getElementById("btn1").addEventListener("click", function(){
     setTimeout(function(){ 
         document.getElementById("Hello").src = "./assets/images/Snapchat-1637716371.jpg";
         document.getElementById("Hello").alt = "LJ holding his sister's dog Teeny";
-    }, 2800);
+    }, 5600);
 })
