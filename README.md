@@ -1,8 +1,12 @@
 # My Portfolio Website
 
-This portfolio website was my second assignment for school. But it's also going to be my personal website from now on.
+* This is a site that I built from the ground up using HTML, CSS, and Bootstrap 4.
 
-I built this site from the ground up and used Bootstrap to help with the design and the layout of the webpage. 
+* This site is currently live on github pages
+
+* This portfolio website was an assignment I had to make in class, but it will also be used as my main website.
+
+
 
 This project was both fun and challenging as this was my first time ever using Bootstrap.
 
