@@ -52,6 +52,7 @@ button:focus {
 /* Main section */
 main {
     margin: 45px 5%;
+    box-shadow: 2px 9px 15px -3px #444;
 }
 
 h2 {
