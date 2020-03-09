@@ -104,6 +104,8 @@ main button:hover {
     float: left;
     margin-right: 2%;
     border-radius: 5%;
+    border: 2px solid #444;
+    box-shadow: 2px 6px 15px -3px #444;
 }
 
 hr {
