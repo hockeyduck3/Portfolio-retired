@@ -2,9 +2,9 @@
 
 * This is a site that I built from the ground up using HTML, CSS, and Bootstrap 4.
 
-* This site is currently live on github pages
+* This site is currently live on github pages.
 
-* This portfolio website was an assignment I had to make in class, but it will also be used as my main website.
+* This portfolio website was an assignment I had to make for class, but it will also be used as my main website.
 
 
 
