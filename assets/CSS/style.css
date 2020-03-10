@@ -124,6 +124,19 @@ hr {
     border-color: black;
 }
 
+.col-md-3 a {
+    text-decoration: none;
+}
+
+.col-md-3 {
+    transition: ease-out 0.3s;
+}
+
+.col-md-3:hover {
+    transform: scale(1.08);
+    transition: ease-in 0.4s;
+}
+
 .col-md-3 img {
     border-radius: 10px 10px 0px 0;
     width: 100%;
