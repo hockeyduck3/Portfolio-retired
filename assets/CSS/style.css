@@ -11,20 +11,19 @@ body {
     flex-direction: column;
 }
 
+h2, .navbar-brand {
+    font-family: 'Yellowtail', cursive;
+}
+
 /* Nav / Header */
 .navbar-brand {
     background-color: #444;
     padding: 20px 45px;
     margin-left: 5%;
     font-size: 30px;
-    font-family: 'Yellowtail', cursive;
 }
 
-.navbar-light .navbar-brand {
-    color: #fff;
-}
-
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+.navbar-light .navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
     color: #fff;
 }
 
@@ -42,7 +41,7 @@ button:focus {
 }
 
 .nav-link:hover {
-    transition: ease 0.6s;
+    transition: ease-in 0.6s;
 }
 
 .nav-link {
@@ -57,7 +56,6 @@ main {
 
 h2 {
     font-size: 45px;
-    font-family: 'Yellowtail', cursive;
 }
 
 main p {
@@ -124,17 +122,22 @@ hr {
     border-color: black;
 }
 
-.col-md-3 a {
-    text-decoration: none;
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 35px;
 }
 
-.col-md-3 {
-    transition: ease-out 0.3s;
+.col-md-3 a {
+    text-decoration: none;
 }
 
 .col-md-3:hover {
     transform: scale(1.08);
     transition: ease-in 0.4s;
+}
+
+.col-md-3 {
+    transition: ease-out 0.3s;
 }
 
 .col-md-3 img {
@@ -147,11 +150,6 @@ hr {
     color: white;
     text-align: center;
     border-radius: 0 0 10px 10px;
-}
-
-.container h1 {
-    margin-bottom: 25px;
-    font-size: 35px;
 }
 
 /* Footer */
