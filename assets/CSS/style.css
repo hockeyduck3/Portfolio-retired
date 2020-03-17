@@ -11,11 +11,11 @@ body {
     flex-direction: column;
 }
 
+/* Nav / Header */
 h2, .navbar-brand {
     font-family: 'Yellowtail', cursive;
 }
 
-/* Nav / Header */
 .navbar-brand {
     background-color: #444;
     padding: 20px 45px;
