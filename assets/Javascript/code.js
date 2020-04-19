@@ -1,9 +1,45 @@
-document.getElementById("btn1").addEventListener("click", function(){
-    document.getElementById("Hello").src = "./assets/images/giphy.gif";
-    document.getElementById("Hello").alt = "Obi-Wan Kenobi says, hello there!";
+$('#btn1').click(function() {
+    $('.aboutMe, .idk').slideUp('slow');
 
-    setTimeout(function(){ 
-        document.getElementById("Hello").src = "./assets/images/Snapchat-1637716371.jpg";
-        document.getElementById("Hello").alt = "LJ holding his sister's dog Teeny";
-    }, 5600);
+    showHelloThere();
 })
+
+function showHelloThere () {
+    setTimeout(function () {
+        $('#profilePic, .text').hide();
+
+        $('#helloThere').removeClass('hide').hide();
+
+        $('.aboutMe').text('Hello There!');
+
+        $('.aboutMe, .idk').slideDown('slow');
+
+        setTimeout(function () {
+            $('#helloThere').slideDown('slow');
+
+            setTimeout(function () {
+                $('.aboutMe, .idk').slideUp('slow');
+
+                showAboutMe();
+            }, 5000)
+
+        }, 500)
+
+    }, 1000)
+}
+
+function showAboutMe () {
+    $('#helloThere').slideUp('slow');
+
+    setTimeout(function () {
+        $('#helloThere').addClass('hide');
+
+        $('.aboutMe').text('About me');
+
+        $('.aboutMe, .idk').slideDown('slow');
+
+        setTimeout(function () {
+            $('#profilePic, .text').slideDown('slow');
+        }, 1000)
+    }, 1000)
+}
