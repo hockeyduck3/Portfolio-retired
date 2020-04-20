@@ -1,12 +1,10 @@
 # My Portfolio Website
 
-* This is a site that I built from the ground up using HTML, CSS, and Bootstrap 4.
+* This is a site that I built from the ground up using HTML, CSS/Bootstrap, and Javascript/jQuery.
 
-* This site is currently live on github pages.
+* This site is currently live on github pages at this link: https://hockeyduck3.github.io/Portfolio
 
-* This portfolio website was an assignment I had to make for class, but it will also be used as my main website.
-
-
+* This portfolio website was an assignment I had to make for class, but it is also my main website.
 
 This project was both fun and challenging as this was my first time ever using Bootstrap.
 
