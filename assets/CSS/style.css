@@ -12,6 +12,10 @@ body {
 }
 
 /* Nav / Header */
+.navbar {
+    background-color: #444;
+}
+
 h2, .navbar-brand {
     font-family: 'Yellowtail', cursive;
 }
@@ -50,13 +54,19 @@ button:focus {
 }
 
 /* Main section */
-main {
+main, .connect {
     margin: 45px 5%;
-    box-shadow: 2px 9px 15px -3px #444;
+    box-shadow: 2px 9px 10px -3px #444;
 }
 
 h2 {
     font-size: 45px;
+}
+
+hr {
+    height: 2px;
+    background-color: #444;
+    border: none;
 }
 
 main p {
@@ -65,6 +75,7 @@ main p {
     line-height: 1.6em;
 }
 
+/* Styling for the hello there button */
 main button {
     background-color: white;
     border: none;
@@ -85,6 +96,7 @@ main button:hover {
     transition: ease-in 0.3s;
 }
 
+/* Styling for the card */
 .card {
     border: 3px solid #444;
 }
@@ -98,26 +110,20 @@ main button:hover {
     padding-left: 0;
 }
 
+/* Styling for the profile picture and the hello there gif */
 #profilePic, #helloThere {
-    width: 25%;
-    float: left;
-    margin-right: 2%;
     border-radius: 0.5rem;
     border: 2px solid #444;
     box-shadow: 2px 6px 15px -3px #444;
+    float: left;
+    margin-right: 2%;
+    width: 25%;
 }
 
+/* More styling for the hello there gif */
 #helloThere {
     width: 100%;
     float: none;
-    align-self: center;
-    justify-content: center;
-}
-
-hr {
-    height: 2px;
-    background-color: #444;
-    border: none;
 }
 
 .btn {
@@ -135,6 +141,60 @@ hr {
     font-size: 35px;
 }
 
+/* Styling for the connect with me section */
+.container-sm {
+    margin-bottom: 30px;
+}
+
+.connectText {
+    text-align: center;
+}
+
+.socialLinks {
+    display: flex;
+    font-size: 40px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.twitter, .github, .linkedIn {
+    transition: linear 0.4s;
+}
+
+.twitterLink, .githubLink, .linkedInLink {
+    box-shadow: 0px 5px 5px -3px #444;
+    border-radius: 0.5rem;
+    margin: 5px 25px;
+    padding: 4px 7px;
+}
+
+.twitterLink, .twitterLink:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.githubLink, .githubLink:hover {
+    background-color: black;
+    color: white;
+}
+
+.linkedInLink, .linkedInLink:hover {
+    background-color: #2867B2;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.twitterLink:hover, .githubLink:hover, .linkedInLink:hover {
+    text-decoration: none;
+}
+
+.twitter:hover, .github:hover, .linkedIn:hover {
+    transform: scale(1.05);
+    transition: linear 0.4s;
+}
+
+/* Portfolio stylings */
 .col-md-3 a {
     text-decoration: none;
 }
@@ -168,8 +228,26 @@ hr {
     display: none;
 }
 
-/* Footer */
+/* Github link/p tag */
+.beforeFooter {
+    font-size: 11px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+#githubLink {
+    color: black;
+    font-size: 15px;
+    transition: linear 0.1s;
+}
+
+#githubLink:hover {
+    color: rgb(116, 116, 116);
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+
+/* Footer */
 footer {
     margin-top: auto;
     height: 4.5rem;
@@ -203,6 +281,10 @@ footer p{
     .media {
         display: flex;
         margin: 0;
+    }
+
+    .twitterText, .githubText, .linkedInText {
+        display: none;
     }
     
 }

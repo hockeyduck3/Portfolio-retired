@@ -1,7 +1,10 @@
 // When the 'Hello there!' in the about me paragraph is clicked on
 $('#btn1').click(function() {
-    // Get rid of the 'About me' and the main card div using jQuery's slide up animation
-    $('.aboutMe, .mainCard').slideUp('slow');
+    // Fade out the github repo link
+    $('.beforeFooter').fadeOut('slow');
+
+    // Get rid of the 'About me', the main card div and the 'Connect with me' card using jQuery's slide up animation
+    $('.aboutMe, .mainCard, .container-sm').slideUp('slow');
 
     // Then run the show hello there function
     showHelloThere();
@@ -62,6 +65,15 @@ function showAboutMe () {
             setTimeout(function () {
                 // Show the about me paragraph again using the slide down animation
                 $('.text').slideDown('slow')
+
+                // Wait another 900 milliseconds
+                setTimeout(function () {
+                    // Show the Connect with me card again using the slide down animation
+                    $('.container-sm').slideDown('slow');
+
+                    // Fade the github repo link back in
+                    $('.beforeFooter').fadeIn('slow');
+                }, 900)
             }, 900)
         }, 1000)
     }, 1000)
