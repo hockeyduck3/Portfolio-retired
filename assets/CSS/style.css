@@ -283,7 +283,11 @@ footer p{
     /* Navbar */
     .navbar-nav, .nav-link, button {
         padding-left: 5%;
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        padding: 25px 10px;
     }
 
     .nav-link{
