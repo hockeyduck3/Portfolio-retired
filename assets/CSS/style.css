@@ -73,7 +73,7 @@ hr {
 
 main p, main button {
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6em;
 }
 
@@ -313,6 +313,10 @@ footer p{
         float: none;
         margin: 5px 0px 25px 5px;
         width: 95%;
+    }
+
+    main p, main button {
+        font-size: 18px;
     }
 
     .project {
