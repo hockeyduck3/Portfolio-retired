@@ -324,6 +324,7 @@ footer p{
     }
 
     .project p {
+        font-size: 18px;
         margin-bottom: 35px;
     }
 
@@ -342,7 +343,7 @@ footer p{
 
     /* Main */
     main p, #btn1 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .connectText {
