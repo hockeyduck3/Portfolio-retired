@@ -78,3 +78,15 @@ function showAboutMe () {
         }, 1000)
     }, 1000)
 }
+
+// Function for if the user clicks on the main body of the page
+$('.container-fluid').click(function () {
+    // Check and see if the navbar toggle is open or closed
+    if ($('.navbar-toggler').hasClass('collapsed')) {
+        // If it's closed then do an empty return
+        return;
+    } else {
+        // If it's not then run a click on the navbar toggle so it closes when the user clicks anywhere on the main body of the page
+        $('.navbar-toggler').click()
+    }
+})

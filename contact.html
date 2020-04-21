@@ -4,29 +4,42 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LJ's | Contact</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/circle-cropped.png"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-    <script src="https://kit.fontawesome.com/0a5e91de56.js" crossorigin="anonymous"></script>
+     <!-- Tab icon -->
+     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/circle-cropped.png"/>
+     <!-- Bootstrap css -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!-- Google fonts link -->
+     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+     <!-- My css -->
+     <link rel="stylesheet" href="./assets/CSS/style.css">
+     <!-- Font awesome link -->
+     <script src="https://kit.fontawesome.com/0a5e91de56.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
+    <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">LJ Spencer</a>
-          
+        
+        <!-- Nabbar toggle button -->
+        <!-- This will only show on tablets and mobile devices -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
+        <!-- Navbar items -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
+            <!-- About -->
             <li class="nav-item">
               <a class="nav-link" href="index.html">About</a>
             </li>
+            <!-- Portfolio -->
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
+            <!-- Contact, currently active -->
             <li class="nav-item active">
               <a class="nav-link last" href="">Contact <span class="sr-only">(current)</span></a>
             </li>
@@ -35,6 +48,7 @@
       </nav>
     </header>
 
+    <!-- Main section -->
     <div class="container-fluid">
         <main class="card">
             <section class="card-body">
@@ -42,6 +56,7 @@
 
                 <hr class="line">
 
+                <!-- Name -->
                 <div class="form-group">
                     <label class="col-sm-3 control-label" for="name">Name</label>
                     <div class="col-md-9">
@@ -73,50 +88,49 @@
                   </div>
             </section>
         </main>
-    </div>
 
-    <!-- Connect with me section -->
-    <div class="container-sm">
-      <div class="card connect">
-        <div class="card-body">
-          <!-- Card title -->
-          <h2 class="connectText">Connect with me</h2>
+        <!-- Connect with me section -->
+        <div class="container-sm">
+          <div class="card connect">
+            <div class="card-body">
+              <!-- Card title -->
+              <h2 class="connectText">Connect with me</h2>
 
-          <hr class="line">
+              <hr class="line">
 
-          <!-- Div for social links-->
-          <div class="socialLinks">
-            <!-- Twitter -->
-            <div class="twitter">
-              <a href="https://twitter.com/ljspencer97" target="_blank" class="twitterLink">
-                <span class="twitterText">Twitter</span>
-                <i class="fab fa-twitter twitterLogo"></i>
-              </a>
-            </div>
+              <!-- Div for social links-->
+              <div class="socialLinks">
+                <!-- Twitter -->
+                <div class="twitter">
+                  <a href="https://twitter.com/ljspencer97" target="_blank" class="twitterLink">
+                    <span class="twitterText">Twitter</span>
+                    <i class="fab fa-twitter twitterLogo"></i>
+                  </a>
+                </div>
 
-            <!-- Github -->
-            <div class="github">
-              <a href="https://github.com/hockeyduck3" target="_blank" class="githubLink">
-                <span class="githubText">Github</span>
-                <i class="fab fa-github githubLogo"></i>
-              </a>
-            </div>
+                <!-- Github -->
+                <div class="github">
+                  <a href="https://github.com/hockeyduck3" target="_blank" class="githubLink">
+                    <span class="githubText">Github</span>
+                    <i class="fab fa-github githubLogo"></i>
+                  </a>
+                </div>
 
-            <!-- LinkedIn -->
-            <div class="linkedIn">
-              <a href="https://linkedin.com/in/lj-spencer" target="_blank" class="linkedInLink">
-                <span class="linkedInText">LinkedIn</span>
-                <i class="fab fa-linkedin linkedInLogo"></i>
-              </a>
+                <!-- LinkedIn -->
+                <div class="linkedIn">
+                  <a href="https://linkedin.com/in/lj-spencer" target="_blank" class="linkedInLink">
+                    <span class="linkedInText">LinkedIn</span>
+                    <i class="fab fa-linkedin linkedInLogo"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-      </div>
     </div>
 
     <!-- Github repo link -->
-    <div class="beforeFooter">
+    <div class="mainBeforeFooter beforeFooter">
       <a id="githubLink" href="https://github.com/hockeyduck3/Portfolio" target="_blank">Click here for this website's repo <i class="fab fa-github"></i></a>
     </div>
 
@@ -125,7 +139,11 @@
         <p id="copy">&copy; Copyright 2020.</p>
     </footer>
 
+    <!-- Regular jQuery Link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- My Javascript -->
+    <script src="./assets/Javascript/code.js"></script>
+    <!-- Bootstrap Javascript links -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>

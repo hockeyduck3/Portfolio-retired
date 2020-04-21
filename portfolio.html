@@ -4,29 +4,43 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LJ's | Portfolio</title>
+    <!-- Tab icon -->
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/circle-cropped.png"/>
+    <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google fonts link -->
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- My css -->
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/0a5e91de56.js" crossorigin="anonymous"></script>
   </head>
 
 
   <body>
+    <!-- Navbar -->
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="index.html">LJ Spencer</a>
-            
+          
+          <!-- Nabbar toggle button -->
+          <!-- This will only show on tablets and mobile devices -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
+          <!-- Navbar items -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
+              <!-- About -->
               <li class="nav-item">
                 <a class="nav-link" href="index.html">About</a>
               </li>
+              <!-- Portfolio, currently active -->
               <li class="nav-item active">
                 <a class="nav-link" href="">Portfolio <span class="sr-only">(current)</span></a>
               </li>
+              <!-- Contact -->
               <li class="nav-item">
                 <a class="nav-link last" href="contact.html">Contact</a>
               </li>
@@ -35,6 +49,7 @@
         </nav>
       </header>
 
+      <!-- Main section -->
       <div class="container-fluid">
           <main class="card">
               <section class="card-body">
@@ -43,31 +58,79 @@
                   <hr class="line">
                   
                   <div class="container">
-                    <h1>Coming Soon</h1>
+                    <!-- Portfolio cards -->
                     <div class="row">
-                      <div class="col-md-3">
-                        <a href="#">
-                          <img src="./assets/images/150x150.png" alt="placeholder image">
-                          <p>Project A</p>
+
+                      <!-- Quiz game card -->
+                      <div class="col-md-3 project">
+                        <a href="https://hockeyduck3.github.io/Quiz-Game/" target="_blank">
+                          <img src="assets/images/Screenshot (34).png" alt="placeholder image">
+                          <p>Quiz Game!</p>
                         </a>
                       </div>
-                      <div class="col-md-3">
-                        <a href="#">
-                          <img src="./assets/images/150x150.png" alt="placeholder image">
-                          <p>Project B</p>
+
+                      <!-- Password Maker card -->
+                      <div class="col-md-3 project">
+                        <a href="https://hockeyduck3.github.io/Password-Generator/" target="_blank">
+                          <img src="assets/images/Screenshot (28).png" alt="placeholder image">
+                          <p>Password Maker</p>
                         </a>
                       </div>
-                      <div class="col-md-3">
-                        <a href="#">
-                          <img src="./assets/images/150x150.png" alt="placeholder image">
-                          <p>Project C</p>
+
+                      <!-- Weather Site card -->
+                      <div class="col-md-3 project">
+                        <a href="https://hockeyduck3.github.io/Weather-Site/" target="_blank">
+                          <img src="assets/images/Screenshot (32).png" alt="placeholder image">
+                          <p>Weather Site</p>
                         </a>
                       </div>
-                      <div class="col-md-3">
-                        <a href="#">
-                          <img src="./assets/images/150x150.png" alt="placeholder image">
-                          <p>Project D</p>
+
+                      <!-- COVID-19 Info card -->
+                      <div class="col-md-3 project">
+                        <a href="https://hockeyduck3.github.io/COVID-Website/" target="_blank">
+                          <img src="./assets/images/Screenshot (75).png" alt="placeholder image">
+                          <p>COVID-19 Info</p>
                         </a>
+                      </div>
+                    </div>
+
+                    <!-- Repo Links -->
+                    <div class="row">
+                      <!-- Quiz Game repo link -->
+                      <div class="col-md-3">
+                        <div class="beforeFooter">
+                          <h2 class="repoLinkTitle hide">Repo Links</h2>
+                          <a id="githubLink" href="https://github.com/hockeyduck3/Quiz-Game" target="_blank">Quiz repo <i class="fab fa-github"></i></a>
+                        </div>
+
+                        <hr class="repoHr hide">
+                      </div>
+
+                      <!-- Password Maker repo link -->
+                      <div class="col-md-3">
+                        <div class="beforeFooter">
+                          <a id="githubLink" href="https://github.com/hockeyduck3/Password-Generator" target="_blank">Password repo <i class="fab fa-github"></i></a>
+                        </div>
+
+                        <hr class="repoHr hide">
+                      </div>
+
+                      <!-- Weather Site repo link -->
+                      <div class="col-md-3">
+                        <div class="beforeFooter">
+                          <a id="githubLink" href="https://github.com/hockeyduck3/Weather-Site" target="_blank">Weather repo <i class="fab fa-github"></i></a>
+                        </div>
+
+                        <hr class="repoHr hide">
+                      </div>
+
+                      <!-- COVID-19 Info repo link -->
+                      <div class="col-md-3">
+                        <div class="beforeFooter">
+                          <a id="githubLink" href="https://github.com/hockeyduck3/COVID-Website" target="_blank">COVID repo <i class="fab fa-github"></i></a>
+                        </div>
+
+                        <hr class="repoHr hide">
                       </div>
                     </div>
                   </div>
@@ -75,12 +138,21 @@
           </main>
       </div>
 
+      <!-- Github repo link -->
+      <div class="mainBeforeFooter beforeFooter">
+        <a id="githubLink" href="https://github.com/hockeyduck3/Portfolio" target="_blank">Click here for this website's repo <i class="fab fa-github"></i></a>
+      </div>
+
       <footer>
           <p>Made with &hearts; in SLC.</p>
           <p id="copy">&copy; Copyright 2020.</p>
       </footer>
     
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <!-- Regular jQuery Link -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!-- My Javascript -->
+      <script src="./assets/Javascript/code.js"></script>
+      <!-- Bootstrap Javascript links -->
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
