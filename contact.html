@@ -39,6 +39,10 @@
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
+            <!-- Resume -->
+            <li class="nav-item">
+              <a class="nav-link" href="LJ-Spencer-Resume-2020.pdf">Resume</a>
+            </li>
             <!-- Contact, currently active -->
             <li class="nav-item active">
               <a class="nav-link last" href="">Contact <span class="sr-only">(current)</span></a>
@@ -51,41 +55,50 @@
     <!-- Main section -->
     <div class="container-fluid">
         <main class="card">
-            <section class="card-body">
-                <h2>Contact me</h2>
+          <section class="card-body">
+            <h2>Contact me</h2>
 
                 <hr class="line">
-
-                <!-- Name -->
-                <div class="form-group">
-                    <label class="col-sm-3 control-label" for="name">Name</label>
-                    <div class="col-md-9">
-                      <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-                    </div>
-                  </div>
-          
-                  <!-- Email input-->
+                
+                <div class="mainCard">
+                  <form id="my-form"
+                  action="https://formspree.io/moqngqye"
+                  method="POST">
+                  <!-- Name -->
                   <div class="form-group">
-                    <label class="col-sm-3 control-label" for="email">Your E-mail</label>
-                    <div class="col-md-9">
-                      <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-                    </div>
-                  </div>
-          
-                  <!-- Message body -->
-                  <div class="form-group">
-                    <label class="col-sm-3 control-label" for="message">Your message</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here." rows="3"></textarea>
-                    </div>
-                  </div>
-          
-                  <!-- Form actions -->
-                  <div class="form-group">
-                    <div class="col-md-12 text-right">
-                      <button type="submit" class="btn btn-primary btn-lg" disabled>Submit</button>
-                    </div>
-                  </div>
+                        <label class="col-sm-12 control-label" for="name">Name <span id="nameError" class="hide">* Cannot contain numbers.</span></label>
+                        <div class="col-md-9">
+                          <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                        </div>
+                      </div>
+              
+                      <!-- Email input-->
+                      <div class="form-group">
+                        <label class="col-sm-12 control-label" for="email">Your E-mail <span id="emailError" class="hide">* Invalid email.</span></label>
+                        <div class="col-md-9">
+                          <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                        </div>
+                      </div>
+              
+                      <!-- Message body -->
+                      <div class="form-group">
+                        <label class="col-sm-12 control-label" for="message">Your message <span id="messageError" class="hide">* Cannot be empty.</span></label>
+                        <div class="col-md-9">
+                          <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here." rows="3"></textarea>
+                        </div>
+                      </div>
+              
+                      <!-- Form actions -->
+                      <div class="form-group">
+                        <div class="col-md-12 text-right">
+                          
+                          <p class="ajaxError hide">Something went wrong...</p>
+                          <button type="submit" class="btn btn-primary btn-lg" id="my-form-button">Submit</button>
+                        </div>
+                      </div>
+                  </form>
+                  <p class="ajaxSuccess hide">Message Sent!</p> 
+                </div>
             </section>
         </main>
 

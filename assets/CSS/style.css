@@ -16,7 +16,7 @@ body {
     background-color: #444 !important;
 }
 
-h2, .navbar-brand {
+h2, .navbar-brand, .ajaxSuccess, .ajaxError {
     font-family: 'Yellowtail', cursive;
 }
 
@@ -133,6 +133,15 @@ main button:hover {
     margin-top: 10px;
 }
 
+.btn:hover, .btn:focus, .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: rgb(116, 116, 116);
+    border-color: rgb(116, 116, 116);
+}
+
+.btn:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(139, 139, 139, 0.5);
+}
+
 .form-control {
     border-color: black;
 }
@@ -219,6 +228,23 @@ main button:hover {
     color: white;
     text-align: center;
     border-radius: 0 0 10px 10px;
+}
+
+/* Contact page styling */
+#nameError, #emailError, #messageError, .ajaxError {
+    color: red;
+}
+
+.ajaxSuccess {
+    color: green;
+    font-size: 50px;
+    text-align: center;
+}
+
+.ajaxError {
+    display: inline;
+    font-size: 35px;
+    margin-right: 20px;
 }
 
 .hide {
@@ -332,6 +358,21 @@ footer p{
         margin-bottom: 35px;
     }
 
+    /* Contact page styling */
+    .control-label {
+        font-size: 15px;
+    }
+
+    #nameError, #emailError, #messageError {
+        font-size: 12px;
+    }
+
+    .ajaxError {
+        font-size: 30px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
     /* Footer */
     .repoLinkTitle, .repoHr {
         display: block;
@@ -352,6 +393,23 @@ footer p{
 
     .connectText {
         font-size: 40px;
+    }
+
+    /* Contact page styling */
+    .control-label {
+        font-size: 14px;
+    }
+
+    #nameError, #emailError, #messageError {
+        font-size: 10px;
+    }
+
+    .ajaxSuccess {
+        font-size: 40px;
+    }
+
+    .ajaxError {
+        font-size: 26px;
     }
 
     .twitterLink, .githubLink, .linkedInLink {
