@@ -366,6 +366,8 @@ footer p{
     .navbar-nav, .nav-link, button {
         padding-left: 5%;
         font-size: 20px;
+        display: flex;
+        flex-direction: row;
     }
 
     .navbar-brand {
@@ -373,7 +375,7 @@ footer p{
     }
 
     .nav-link{
-        margin: 5px;
+        margin: 5px 48px;
     }
 
     /* Main Section */
@@ -403,6 +405,10 @@ footer p{
 
 /* Mobile */
 @media(max-width: 640px) {
+    .nav-link{
+        margin: 5px 10px;
+    }
+
     .backBtn {
         margin: 0;
     }
@@ -467,7 +473,7 @@ footer p{
 }
 
 /* iPhone 5/SE */
-@media(max-width: 320px) {
+@media(max-width: 375px) {
     /* Nav */
     button {
         margin-right: 20px;
@@ -479,6 +485,11 @@ footer p{
 
     .cardHeader {
         font-size: 29px;
+    }
+
+    .nav-link {
+        margin: 5px 10px;
+        font-size: 18px;
     }
 
     /* Main */
@@ -517,5 +528,18 @@ footer p{
 
     #githubLink {
         font-size: 16px;
+    }
+}
+
+@media(max-width: 360px) {
+    .nav-link {
+        margin: 5px 10px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 320px) {
+    .nav-link {
+        margin: 5px 7px;
     }
 }
