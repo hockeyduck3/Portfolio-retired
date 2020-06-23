@@ -330,6 +330,18 @@ main button:hover {
     margin-bottom: 30px;
 }
 
+#githubLink {
+    color: black;
+    font-size: 15px;
+    transition: linear 0.1s;
+}
+
+#githubLink:hover {
+    color: rgb(116, 116, 116);
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     margin-top: auto;
@@ -419,6 +431,10 @@ footer p{
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    #githubLink{
+        font-size: 18px;
+    }
 }
 
 /* iPhone 5/SE */
@@ -456,5 +472,9 @@ footer p{
 
     .twitterLink, .githubLink, .linkedInLink {
         margin: 0px 13px;
+    }
+
+    #githubLink {
+        font-size: 16px;
     }
 }
