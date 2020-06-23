@@ -213,7 +213,7 @@ main button:hover {
 }
 
 .project:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     transition: ease-in 0.4s;
 }
 
@@ -382,6 +382,16 @@ footer p{
         margin: 0;
     }
 
+    .portfolioBigImg {
+        float: none;
+        margin: 10px 0 25px 0;
+    }
+
+    .description {
+        float: none;
+        margin: 0;
+    }
+
     .twitterText, .githubText, .linkedInText {
         display: none;
     }
@@ -393,6 +403,14 @@ footer p{
 
 /* Mobile */
 @media(max-width: 640px) {
+    .backBtn {
+        margin: 0;
+    }
+
+    .cardHeader {
+        font-size: 32px;
+    }
+
     /* Main section */
     #profilePic {
         float: none;
@@ -415,6 +433,17 @@ footer p{
     .project p {
         font-size: 18px;
         margin-bottom: 35px;
+    }
+
+    .links {
+        margin: 0;
+        float: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liveLinkDiv, .repoLinkDiv {
+        margin: 9px 0;
     }
 
     /* Contact page styling */
@@ -444,6 +473,14 @@ footer p{
         margin-right: 20px;
     }
 
+    .backBtn {
+        font-size: 27px;
+    }
+
+    .cardHeader {
+        font-size: 29px;
+    }
+
     /* Main */
     main p, #btn1 {
         font-size: 15px;
@@ -451,6 +488,10 @@ footer p{
 
     .connectText {
         font-size: 40px;
+    }
+
+    .descriptionText {
+        font-size: 15px;
     }
 
     /* Contact page styling */
