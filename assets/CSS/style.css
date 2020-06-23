@@ -16,7 +16,7 @@ body {
     background-color: #444 !important;
 }
 
-h2, .navbar-brand, .ajaxSuccess, .ajaxError {
+h2, .navbar-brand, .ajaxSuccess, .ajaxError, .linksTitle, .descriptionTitle {
     font-family: 'Yellowtail', cursive;
 }
 
@@ -104,6 +104,10 @@ main button:hover {
 
 .card-body {
     padding: 1.04rem;
+}
+
+.cardHeader {
+    text-align: center;
 }
 
 .container-fluid {
@@ -233,6 +237,67 @@ main button:hover {
     border-radius: 0 0 10px 10px;
 }
 
+.enlarged {
+    margin-top: 15px;
+}
+
+.description {
+    margin: 7px 0px 0px 60px;
+}
+
+.descriptionText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolioBigImg {
+    float: left;
+    width: 100%;
+    border: 5px solid;
+    border-radius: 1rem;
+    box-shadow: 2px 9px 10px -3px #444;
+    margin: 30px;
+}
+
+.links {
+    text-align: center;
+    margin: 15px 50px;
+}
+
+.linksTitle, .descriptionTitle {
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-bottom: 15px;
+}
+
+.liveLinkDiv, .repoLinkDiv {
+    display: inline;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.liveLink, .repoLink {
+    color: #444;
+}
+
+.liveLink:hover, .repoLink:hover {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
+
+.backBtn {
+    color: #444;
+    float: left;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.backBtn:hover {
+    color: rgb(95, 95, 95);
+}
+
 /* Contact page styling */
 #nameError, #emailError, #messageError, .ajaxError {
     color: red;
@@ -263,30 +328,6 @@ main button:hover {
 
 .mainBeforeFooter {
     margin-bottom: 30px;
-}
-
-.repoLinkTitle {
-    margin-bottom: 30px;
-    text-decoration: underline;
-}
-
-.repoHr {
-    margin-top: 0;
-    margin-bottom: 30px;
-    background-color: lightgray;
-    width: 70%;
-}
-
-#githubLink {
-    color: black;
-    font-size: 15px;
-    transition: linear 0.1s;
-}
-
-#githubLink:hover {
-    color: rgb(116, 116, 116);
-    transition: linear 0.1s;
-    text-decoration: none;
 }
 
 /* Footer */
@@ -378,15 +419,6 @@ footer p{
         margin-right: 0;
         margin-bottom: 10px;
     }
-
-    /* Footer */
-    .repoLinkTitle, .repoHr {
-        display: block;
-    }
-
-    #githubLink{
-        font-size: 18px;
-    }
 }
 
 /* iPhone 5/SE */
@@ -424,9 +456,5 @@ footer p{
 
     .twitterLink, .githubLink, .linkedInLink {
         margin: 0px 13px;
-    }
-
-    #githubLink {
-        font-size: 16px;
     }
 }

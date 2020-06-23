@@ -57,84 +57,71 @@
       <div class="container-fluid">
           <main class="card">
               <section class="card-body">
-                  <h2>My Portfolio</h2>
+                <a href="" class="backBtn" style="display: none;"><i class="fas fa-chevron-left"></i></a>
+                <h2 class="cardHeader">My Portfolio</h2>
 
                   <hr class="line">
                   
                   <div class="container">
                     <!-- Portfolio cards -->
-                    <div class="row">
+                    <div class="row mainSection">
 
                       <!-- Quiz game card -->
-                      <div class="col-md-3 project">
-                        <a href="https://hockeyduck3.github.io/Quiz-Game/" target="_blank">
+                      <div class="col-md-3 project" data-name="quiz">
+                        <a href="" target="_blank">
                           <img src="assets/images/Screenshot (34).png" alt="placeholder image">
                           <p>Quiz Game!</p>
                         </a>
                       </div>
 
                       <!-- Password Maker card -->
-                      <div class="col-md-3 project">
-                        <a href="https://hockeyduck3.github.io/Password-Generator/" target="_blank">
+                      <div class="col-md-3 project" data-name="password">
+                        <a href="" target="_blank">
                           <img src="assets/images/Screenshot (28).png" alt="placeholder image">
                           <p>Password Maker</p>
                         </a>
                       </div>
 
                       <!-- Weather Site card -->
-                      <div class="col-md-3 project">
-                        <a href="https://hockeyduck3.github.io/Weather-Site/" target="_blank">
+                      <div class="col-md-3 project" data-name="weather">
+                        <a href="" target="_blank">
                           <img src="assets/images/Screenshot (32).png" alt="placeholder image">
-                          <p>Weather Site</p>
+                          <p>Weather App</p>
                         </a>
                       </div>
 
                       <!-- COVID-19 Info card -->
-                      <div class="col-md-3 project">
-                        <a href="https://hockeyduck3.github.io/COVID-Website/" target="_blank">
+                      <div class="col-md-3 project" data-name="covid">
+                        <a href="" target="_blank">
                           <img src="./assets/images/Screenshot (75).png" alt="placeholder image">
                           <p>COVID-19 Info</p>
                         </a>
                       </div>
                     </div>
 
-                    <!-- Repo Links -->
-                    <div class="row">
-                      <!-- Quiz Game repo link -->
-                      <div class="col-md-3">
-                        <div class="beforeFooter">
-                          <h2 class="repoLinkTitle hide">Repo Links</h2>
-                          <a id="githubLink" href="https://github.com/hockeyduck3/Quiz-Game" target="_blank">Quiz repo <i class="fab fa-github"></i></a>
+                    <div class="enlarged" style="display: none;">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="" alt="" class="portfolioBigImg">
                         </div>
 
-                        <hr class="repoHr hide">
-                      </div>
+                        
+                        <div class="col-md-7 description">
+                          <h4 class="descriptionTitle">Description</h4>
+                          <p class="descriptionText"></p>
 
-                      <!-- Password Maker repo link -->
-                      <div class="col-md-3">
-                        <div class="beforeFooter">
-                          <a id="githubLink" href="https://github.com/hockeyduck3/Password-Generator" target="_blank">Password repo <i class="fab fa-github"></i></a>
+                          <h4 class="linksTitle">Links</h4>
+
+                          <div class="links">
+                            <div class="liveLinkDiv">
+                              <a href="" class="liveLink" target="_blank"><i class="fas fa-globe-americas"></i> Live Site</a>
+                            </div>
+
+                            <div class="repoLinkDiv">
+                              <a href="" class="repoLink" target="_blank"><i class="fab fa-github"></i> Project Repo</a>
+                            </div>
+                          </div>
                         </div>
-
-                        <hr class="repoHr hide">
-                      </div>
-
-                      <!-- Weather Site repo link -->
-                      <div class="col-md-3">
-                        <div class="beforeFooter">
-                          <a id="githubLink" href="https://github.com/hockeyduck3/Weather-Site" target="_blank">Weather repo <i class="fab fa-github"></i></a>
-                        </div>
-
-                        <hr class="repoHr hide">
-                      </div>
-
-                      <!-- COVID-19 Info repo link -->
-                      <div class="col-md-3">
-                        <div class="beforeFooter">
-                          <a id="githubLink" href="https://github.com/hockeyduck3/COVID-Website" target="_blank">COVID repo <i class="fab fa-github"></i></a>
-                        </div>
-
-                        <hr class="repoHr hide">
                       </div>
                     </div>
                   </div>
@@ -156,6 +143,7 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <!-- My Javascript -->
       <script src="./assets/Javascript/code.js"></script>
+      <script src="./assets/Javascript/portfolio.js"></script>
       <!-- Bootstrap Javascript links -->
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
