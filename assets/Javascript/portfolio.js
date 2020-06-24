@@ -35,7 +35,7 @@ function findProject(name) {
 
          return enlargeProject(
             'My Quiz Game', 
-            'assets/images/Quiz-2.png',
+            './images/Quiz-2.png',
             'https://hockeyduck3.github.io/Quiz-Game/',
             'https://github.com/hockeyduck3/Quiz-Game',
             '21px'
@@ -46,7 +46,7 @@ function findProject(name) {
 
          return enlargeProject(
             'My Weather App', 
-            'assets/images/Weather-2.png',
+            './images/Weather-2.png',
             'https://hockeyduck3.github.io/Weather-Site/',
             'https://github.com/hockeyduck3/Weather-Site',
             '25px'
@@ -58,7 +58,7 @@ function findProject(name) {
             
          return enlargeProject(
             'My Password Generator', 
-            'assets/images/Password-2.png',
+            './images/Password-2.png',
             'https://hockeyduck3.github.io/Password-Generator/',
             'https://github.com/hockeyduck3/Password-Generator',
             '38px'
@@ -69,7 +69,7 @@ function findProject(name) {
 
          return enlargeProject(
             'COVID-19 Website', 
-            './assets/images/Covid-2.png',
+            './images/Covid-2.png',
             'https://hockeyduck3.github.io/COVID-Website/',
             'https://github.com/hockeyduck3/COVID-Website',
             '50px'
@@ -80,7 +80,7 @@ function findProject(name) {
 
          return enlargeProject(
             'Simple Note Taker', 
-            './assets/images/Note-Taker-2.jpg',
+            './images/Note-Taker-2.jpg',
             'https://simple-notes-taker.herokuapp.com/',
             'https://github.com/hockeyduck3/Simple-Note-Taker',
             '33px'
@@ -91,7 +91,7 @@ function findProject(name) {
 
          return enlargeProject(
             'Employee Mangement App', 
-            './assets/images/Employee-Management-2.jpg',
+            './images/Employee-Management-2.jpg',
             'https://www.youtube.com/watch?v=UztqwmOUK84&feature=youtu.be',
             'https://github.com/hockeyduck3/Employee-Management-System',
             '37px'
@@ -102,7 +102,7 @@ function findProject(name) {
 
          return enlargeProject(
             'Eat-Dat-Burger!', 
-            './assets/images/Eat-Dat-Burger-2.jpg',
+            './images/Eat-Dat-Burger-2.jpg',
             'https://eat-dat-burger-website.herokuapp.com/',
             'https://github.com/hockeyduck3/Eat-Dat-Burger',
             '34px'
@@ -113,7 +113,7 @@ function findProject(name) {
 
          return enlargeProject(
             'Poke-Build!', 
-            './assets/images/Poke-Build-2.jpg',
+            './images/Poke-Build-2.jpg',
             'https://poke-build.herokuapp.com/',
             'https://github.com/Akessler314/DREAM-TEAM',
             '20px'
