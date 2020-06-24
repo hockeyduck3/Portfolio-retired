@@ -33,23 +33,25 @@
         <!-- Navbar items -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <!-- About, currently active -->
             {{#if about}}
+            <!-- About, currently active -->
               <li class="nav-item active">
                 <a class="nav-link" href="/">About <span class="sr-only">(current)</span></a>
               </li>
             {{else}}
+            <!-- About -->
               <li class="nav-item">
                 <a class="nav-link" href="/">About</a>
               </li>
             {{/if}}
 
-            <!-- Portfolio -->
             {{#if portfolio}}
+            <!-- Portfolio, currently active -->
               <li class="nav-item active">
                 <a class="nav-link" href="">Portfolio <span class="sr-only">(current)</span></a>
               </li>
             {{else}}
+            <!-- Portfolio -->
               <li class="nav-item">
                 <a class="nav-link" href="/portfolio">Portfolio</a>
               </li>
@@ -60,12 +62,13 @@
               <a class="nav-link" href="/resume">Resume</a>
             </li>
             
-            <!-- Contact -->
             {{#if contact}}
+            <!-- Contact, currently active -->
               <li class="nav-item active">
                 <a class="nav-link last" href="">Contact <span class="sr-only">(current)</span></a>
               </li>
             {{else}}
+            <!-- Contact -->
               <li class="nav-item">
                 <a class="nav-link last" href="/contact">Contact</a>
               </li>
