@@ -2,33 +2,48 @@
 <div class="container-fluid">
     <main class="card">
         <section class="card-body">
-            <!-- Card title -->
-            <h2 class="aboutMe">About me</h2>
+        <h2>Contact me</h2>
 
             <hr class="line">
-
-            <!-- Card body -->
+            
             <div class="mainCard">
-                <!-- Profile picture -->
-                <img id="profilePic" src="./images/Profile-Pic.jpg" alt="LJ holding his sister's dog Teeny">
-
-                <!-- Hello there easter egg gif -->
-                <img id="helloThere" class="hide" src="/images/giphy.gif" alt="Obi-Wan Kenobi says, hello there!">
-    
-                <!-- About me paragraphs -->
-                <p class="text"> <button id="btn1">Hello there!</button> My name is LJ 😁 and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
-
-                <p class="text">I'm a Salt Lake City native who is currently studying Full Stack Web Development at the University of Utah.</p>
-
-                <p class="text">In my free time I like to go to the movies 🎞, hang out and play games with my friends 🎮, tinker with computers and other tech 📱, and on occasion, I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
-
-                <p class="text">If you wanna know more about me, feel free to reach out to me either using email, text, Twitter, Github, or LinkedIn!</p>
-
-                <!-- Email -->
-                <p class="text"><em>Email: hockeyduck3@gmail.com</em></p>
-
-                <!-- Phone -->
-                <p class="text"><em>Phone Number: 801-867-8728</em></p>
+                <form id="my-form"
+                action="https://formspree.io/moqngqye"
+                method="POST">
+                <!-- Name -->
+                <div class="form-group">
+                    <label class="col-sm-12 control-label" for="name">Name <span id="nameError" class="hide">* Cannot contain numbers.</span></label>
+                    <div class="col-md-9">
+                        <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                    </div>
+                    </div>
+            
+                    <!-- Email input-->
+                    <div class="form-group">
+                    <label class="col-sm-12 control-label" for="email">Your E-mail <span id="emailError" class="hide">* Invalid email.</span></label>
+                    <div class="col-md-9">
+                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                    </div>
+                    </div>
+            
+                    <!-- Message body -->
+                    <div class="form-group">
+                    <label class="col-sm-12 control-label" for="message">Your message <span id="messageError" class="hide">* Cannot be empty.</span></label>
+                    <div class="col-md-9">
+                        <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here." rows="3"></textarea>
+                    </div>
+                    </div>
+            
+                    <!-- Form actions -->
+                    <div class="form-group">
+                    <div class="col-md-12 text-right">
+                        
+                        <p class="ajaxError hide">Something went wrong...</p>
+                        <button type="submit" class="btn btn-primary btn-lg" id="my-form-button">Submit</button>
+                    </div>
+                    </div>
+                </form>
+                <p class="ajaxSuccess hide">Message Sent!</p> 
             </div>
         </section>
     </main>
@@ -67,21 +82,16 @@
                 </a>
             </div>
             </div>
-
         </div>
         </div>
     </div>
-</div>
-
-<!-- Github repo link -->
-<div class="mainBeforeFooter beforeFooter">
-    <a id="githubLink" href="https://github.com/hockeyduck3/Portfolio" target="_blank">Click here for this website's repo <i class="fab fa-github"></i></a>
 </div>
 
 <!-- Regular jQuery Link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- My Javascript -->
     <script src="./Javascript/code.js"></script>
+    <script src="./Javascript/contact.js"></script>
     <!-- Bootstrap Javascript links -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
