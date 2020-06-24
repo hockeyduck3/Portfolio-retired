@@ -4,7 +4,8 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     const pageTitle = {
-        title: 'Homepage'
+        title: 'Homepage',
+        about: true
     }
 
     res.render('index', pageTitle);
@@ -12,7 +13,8 @@ router.get('/', (req, res) => {
 
 router.get('/portfolio', (req, res) => {
     const pageTitle = {
-        title: 'Portfolio'
+        title: 'Portfolio',
+        portfolio: true
     }
 
     res.render('portfolio', pageTitle);
@@ -20,7 +22,8 @@ router.get('/portfolio', (req, res) => {
 
 router.get('/contact', (req, res) => {
     const pageTitle = {
-        title: 'Contact'
+        title: 'Contact',
+        contact: true
     }
 
     res.render('contact', pageTitle);

@@ -34,21 +34,42 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <!-- About, currently active -->
-            <li class="nav-item active">
-              <a class="nav-link" href="/">About <span class="sr-only">(current)</span></a>
-            </li>
+            {{#if about}}
+              <li class="nav-item active">
+                <a class="nav-link" href="/">About <span class="sr-only">(current)</span></a>
+              </li>
+            {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="/">About</a>
+              </li>
+            {{/if}}
+
             <!-- Portfolio -->
-            <li class="nav-item">
-              <a class="nav-link" href="/portfolio">Portfolio</a>
-            </li>
+            {{#if portfolio}}
+              <li class="nav-item active">
+                <a class="nav-link" href="">Portfolio <span class="sr-only">(current)</span></a>
+              </li>
+            {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio">Portfolio</a>
+              </li>
+            {{/if}}
+
             <!-- Resume -->
             <li class="nav-item">
               <a class="nav-link" href="/resume">Resume</a>
             </li>
+            
             <!-- Contact -->
-            <li class="nav-item">
-              <a class="nav-link last" href="/contact">Contact</a>
-            </li>
+            {{#if contact}}
+              <li class="nav-item active">
+                <a class="nav-link last" href="">Contact <span class="sr-only">(current)</span></a>
+              </li>
+            {{else}}
+              <li class="nav-item">
+                <a class="nav-link last" href="/contact">Contact</a>
+              </li>
+            {{/if}}
           </ul>
         </div>
       </nav>

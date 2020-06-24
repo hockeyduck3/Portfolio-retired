@@ -1,8 +1,3 @@
-// Code to be used later
-// $(document).ready(() => {
-//     console.log($(location).attr('href') === 'http://localhost:3000/portfolio');
-// });
-
 // When the 'Hello there!' in the about me paragraph is clicked on
 $('#btn1').click(function() {
     $('.beforeFooter').fadeOut('slow');
