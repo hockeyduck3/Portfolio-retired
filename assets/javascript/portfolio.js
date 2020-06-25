@@ -101,7 +101,7 @@ function findProject(name) {
          description = 'For this project I had to go and make a simple burger eating website that utilized a SQL database. The website itself is using Handlebars for HTML handling, Bootstrap, jQuery, Express, and JawsDB. The main point of this website is simple, you can add a burger to the "Burgers to Devour" list, and then once you click on that burger it will move over to the "Devoured burgers" list! All of this is saved within a JawsDB SQL server.';
 
          return enlargeProject(
-            'Eat-Dat-Burger!', 
+            'Eat-Dat-Burger', 
             './images/Eat-Dat-Burger-2.jpg',
             'https://eat-dat-burger-website.herokuapp.com/',
             'https://github.com/hockeyduck3/Eat-Dat-Burger',
@@ -112,7 +112,7 @@ function findProject(name) {
          description = 'This was my second group project in my Full Stack Web Course. We wanted to do something really fun for this project, something that both challenged us and something that we\'d be proud of! With Poke-Build you can go and view other user created Pokemon, Battle Pokemon, or simply make your own Pokemon!';
 
          return enlargeProject(
-            'Poke-Build!', 
+            'Poke-Build', 
             './images/Poke-Build-2.jpg',
             'https://poke-build.herokuapp.com/',
             'https://github.com/Akessler314/DREAM-TEAM',
