@@ -11,6 +11,10 @@ body {
     flex-direction: column;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /* Nav / Header */
 .navbar {
     background-color: #444 !important;
@@ -328,6 +332,11 @@ main button:hover {
     color: red;
 }
 
+.emailText {
+    text-align: center;
+    font-size: 13px;
+}
+
 .ajaxSuccess {
     color: green;
     font-size: 50px;
@@ -400,11 +409,16 @@ footer p{
     }
 
     /* Navbar */
-    .navbar-nav, .nav-link, button {
+    .navbar-nav, .nav-link {
         padding-left: 5%;
         font-size: 20px;
         display: flex;
         flex-direction: row;
+    }
+
+    button {
+        padding-left: 5%;
+        font-size: 20px;
     }
 
     .navbar-brand {
@@ -443,6 +457,10 @@ footer p{
 
 /* Mobile */
 @media(max-width: 640px) {
+    h2 {
+        text-align: center;
+    }
+
     .nav-link{
         margin: 5px 10px;
     }
@@ -452,7 +470,7 @@ footer p{
     }
 
     .cardHeader {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     /* Main section */
@@ -467,7 +485,7 @@ footer p{
     }
 
     main p, main button {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .project {
@@ -545,6 +563,10 @@ footer p{
 
     .connectText {
         font-size: 40px;
+    }
+
+    .emailText {
+        font-size: 11px;
     }
 
     .descriptionText {
