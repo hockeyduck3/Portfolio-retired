@@ -18,6 +18,7 @@
      <script src="https://kit.fontawesome.com/0a5e91de56.js" crossorigin="anonymous"></script>
   </head>
 
+  {{#unless page404}}
   <body>
     <!-- Navbar -->
     <header>
@@ -85,4 +86,11 @@
       <p id="copy">&copy; Copyright 2020.</p>
     </footer>
   </body>
+
+  {{!-- This else statment is so that the 404 page can render properly--}}
+  {{else}}
+
+  {{{ body }}}
+
+  {{/unless}}
 </html>

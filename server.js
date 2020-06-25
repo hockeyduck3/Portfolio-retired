@@ -9,7 +9,7 @@ let server = express();
 // Send the static content to the server
 server.use(express.static('assets'));
 
-server.use(express.urlencoded({ extended: true}));
+server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 
 // Set the server to use handlebars
