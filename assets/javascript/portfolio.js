@@ -1,3 +1,11 @@
+// This will make sure that images fully load before presenting the projects to the user
+$(document).ready(() => {
+   setTimeout(() => {
+      $('.mainSection').slideDown('slow');
+   }, 400);
+});
+
+// When the user clicks on one of the projects
 $('.project').click(function(event) {
    event.preventDefault();
 
@@ -6,28 +14,35 @@ $('.project').click(function(event) {
    findProject(projectPick);
 });
 
+// The back button will only show if the user has clicked on a project.
+// When the user clicks on the back button it will reset everything to how it was on page load
 $('.backBtn').click(event => {
    event.preventDefault();
 
-   $('.card-body').slideUp('slow');
+   $('.enlarged').slideUp('slow');
 
    setTimeout(() => {
+      $('.cardHeader, .backBtn').slideUp('slow');
+
       setTimeout(() => {
          $('.backBtn').hide();
 
          $('.cardHeader').text('My Portfolio');
 
-         $('.mainSection').show();
+         $('.cardHeader').slideDown('slow');
 
-         $('.enlarged').hide();
-
-         $('.card-body').slideDown('slow');
+         setTimeout(() => {
+            $('.mainSection').slideDown('slow');
+         }, 600);
+         
       }, 700);
-   }, 500);
+
+   }, 650);
 });
 
 let description;
 
+// Function for finding which project was clicked on
 function findProject(name) {
    switch(name) {
       case 'quiz':
@@ -121,45 +136,52 @@ function findProject(name) {
    }
 }
 
+// Function for showing the selected project 
 function enlargeProject(name, src, live, repo, margin) {
-   $('.card-body').slideUp('slow');
-
+   $('.mainSection').slideUp('slow');
+   
    setTimeout(() => {
-      $('.mainSection').hide();
-
-      $('.backBtn').show();
-
-      $('.cardHeader').text(name);
-      
-      $('.portfolioBigImg').attr({
-         'src': src,
-         'alt': `'Screenshot of ${name}'`
-      });
-
-      // Found this solution here: https://stackoverflow.com/questions/19291873/window-width-not-the-same-as-media-query
-      if (!window.matchMedia('(max-width: 991px)').matches) {
-         $('.portfolioBigImg').css('margin-top', margin);
-      } else {
-         $('.portfolioBigImg').css('margin-top', '10px');
-      }
-
-      $('.descriptionText').text(description);
-
-      if (name === 'Employee Mangement App') {
-         $('.liveLinkText').text('Youtube Video');
-      } else {
-         $('.liveLinkText').text('Live Site');
-      }
-      
-      $('.liveLink')
-         .attr('href', live);
-
-      $('.repoLink')
-         .attr('href', repo);
+      $('.cardHeader').slideUp('slow');
 
       setTimeout(() => {
-         $('.enlarged').show();
-         $('.card-body').slideDown('slow');
-      }, 500);
-   }, 600);
+         $('.cardHeader').text(name);
+         
+         $('.portfolioBigImg').attr({
+            'src': src,
+            'alt': `'Screenshot of ${name}'`
+         });
+   
+         // Found this solution here: https://stackoverflow.com/questions/19291873/window-width-not-the-same-as-media-query
+         if (!window.matchMedia('(max-width: 991px)').matches) {
+            $('.portfolioBigImg').css('margin-top', margin);
+         } else {
+            $('.portfolioBigImg').css('margin-top', '10px');
+         }
+   
+         $('.descriptionText').text(description);
+   
+         if (name === 'Employee Mangement App') {
+            $('.liveLinkText').text('Youtube Video');
+         } else {
+            $('.liveLinkText').text('Live Site');
+         }
+         
+         $('.liveLink')
+            .attr('href', live);
+   
+         $('.repoLink')
+            .attr('href', repo);
+   
+         setTimeout(() => {
+            $('.cardHeader, .backBtn').slideDown('slow');
+
+            setTimeout(() => {
+               $('.enlarged').slideDown('slow');
+            }, 700);
+
+         }, 200);
+
+      }, 600);
+
+   }, 700);
 }
