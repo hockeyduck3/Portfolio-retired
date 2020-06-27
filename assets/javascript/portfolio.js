@@ -9,9 +9,22 @@ $(document).ready(() => {
 $('.project').click(function(event) {
    event.preventDefault();
 
-   const projectPick = $(this).data('name');
+   if (!window.matchMedia('(max-width: 640px)').matches) {
+      $(this).css('transform', 'scale(1)');
 
-   findProject(projectPick);
+
+      setTimeout(() => {
+         const projectPick = $(this).data('name');
+      
+         findProject(projectPick);
+      }, 300); 
+   } 
+   
+   else {
+      const projectPick = $(this).data('name');
+      
+      findProject(projectPick);
+   }
 });
 
 // The back button will only show if the user has clicked on a project.

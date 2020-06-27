@@ -15,9 +15,17 @@ a:hover {
     text-decoration: none;
 }
 
+hr {
+    margin-bottom: 1.5rem;
+}
+
 /* Nav / Header */
 .navbar {
     background-color: #444 !important;
+}
+
+.navbar-collapse {
+    overflow-x: hidden;
 }
 
 h2, .navbar-brand, .ajaxSuccess, .ajaxError, .linksTitle, .descriptionTitle {
@@ -242,7 +250,7 @@ main button:hover {
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: ease-in 0.4s;
 }
 
@@ -411,7 +419,7 @@ footer p{
     /* Navbar */
     .navbar-nav, .nav-link {
         padding-left: 5%;
-        font-size: 20px;
+        font-size: 18px;
         display: flex;
         flex-direction: row;
     }
@@ -462,7 +470,7 @@ footer p{
     }
 
     .nav-link{
-        margin: 5px 10px;
+        margin: 5px 14px;
     }
 
     .backBtn {
@@ -470,11 +478,11 @@ footer p{
     }
 
     .cardHeader {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     /* Main section */
-    .fourText {
+    .fourText, .project p {
         font-size: 18px;
     }
 
@@ -485,11 +493,7 @@ footer p{
     }
 
     main p, main button {
-        font-size: 18px;
-    }
-
-    .project {
-        margin-bottom: 10px;
+        font-size: 15.5px;
     }
 
     .project:hover {
@@ -497,7 +501,6 @@ footer p{
     }
 
     .project p {
-        font-size: 18px;
         margin-bottom: 35px;
     }
 
@@ -528,7 +531,7 @@ footer p{
     }
 
     #githubLink{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
