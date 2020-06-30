@@ -145,4 +145,4 @@ $('#name, #email, #message').on('keydown', function () {
     }
 
     anyErrors = false;
-})
+});

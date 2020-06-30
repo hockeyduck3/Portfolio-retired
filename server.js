@@ -1,10 +1,13 @@
 // Express Dependencies
 const express = require('express');
 const expressHandle = require('express-handlebars');
+const compression = require('compression');
 
 var PORT = process.env.PORT || 3000;
 
 let server = express();
+
+server.use(compression());
 
 // Send the static content to the server
 server.use(express.static('assets'));

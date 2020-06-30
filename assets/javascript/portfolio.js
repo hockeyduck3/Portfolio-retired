@@ -143,7 +143,7 @@ function findProject(name) {
             'Poke-Build', 
             './images/Poke-Build-2.jpg',
             'https://poke-build.herokuapp.com/',
-            'https://github.com/Akessler314/DREAM-TEAM',
+            'https://github.com/Akessler314/PokE-Build',
             '20px'
          );
    }

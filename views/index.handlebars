@@ -13,14 +13,16 @@
                 <img id="profilePic" src="./images/Profile-Pic.jpg" alt="LJ holding his sister's dog Teeny">
 
                 <!-- Hello there easter egg gif -->
-                <img id="helloThere" class="hide" src="/images/giphy.gif" alt="Obi-Wan Kenobi says, hello there!">
+                <video autoplay loop id="helloThere" class="hide">
+                    <source src="../images/hello-there.mp4" type="video/mp4" alt="Obi-Wan Kenobi says, hello there!">
+                </video>
     
                 <!-- About me paragraphs -->
                 <p class="text"> <button id="btn1">Hello there!</button> My name is LJ 😁 and the Chihuahua in the picture with me is my sister's dog Tyne! (Pronounced Teeny) </p>
 
                 <p class="text">I'm a Salt Lake City native who is currently studying Full Stack Web Development at the University of Utah.</p>
 
-                <p class="text">If you want to see some of the project I've worked on, head over to my <a href="/portfolio">Portfolio page</a></p>
+                <p class="text">If you want to see some of the projects I've worked on, head over to my <a href="/portfolio">Portfolio page</a></p>
 
                 <p class="text">In my free time I like to go to the movies 🎞, hang out and play games with my friends 🎮, tinker with computers and other tech 📱, and on occasion, I'll travel down to Las Vegas to watch some hockey. Go Knights Go! ⚔</p>
 
@@ -36,13 +38,13 @@
 
 <!-- Github repo link -->
 <div class="mainBeforeFooter beforeFooter">
-    <a id="githubLink" href="https://github.com/hockeyduck3/Portfolio" target="_blank">Click here for this website's repo <i class="fab fa-github"></i></a>
+    <a id="githubLink" href="https://github.com/hockeyduck3/Portfolio" target="_blank" rel="noopener">Click here for this website's repo <i class="fab fa-github"></i></a>
 </div>
 
 <!-- Regular jQuery Link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- My Javascript -->
-    <script src="./javascript/code.js"></script>
+    <script src="./dist/code-min.js"></script>
     <!-- Bootstrap Javascript links -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

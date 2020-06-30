@@ -168,7 +168,7 @@ main button:hover {
 }
 
 /* Styling for the profile picture and the hello there gif */
-#profilePic, #helloThere {
+#profilePic {
     border-radius: 0.5rem;
     border: 2px solid #444;
     box-shadow: 2px 6px 15px -3px #444;
@@ -180,7 +180,6 @@ main button:hover {
 /* More styling for the hello there gif */
 #helloThere {
     width: 100%;
-    float: none;
 }
 
 .btn {
@@ -265,12 +264,12 @@ main button:hover {
 }
 
 .project:hover {
+    image-rendering: crisp-edges;
     transform: scale(1.03);
-    transition: ease-in 0.4s;
 }
 
 .project {
-    transition: ease-out 0.3s;
+    transition: ease-out 0.1s;
 }
 
 .project img {
