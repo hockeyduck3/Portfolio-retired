@@ -6,6 +6,4 @@
 
 * This site is currently live on heroku at this link: https://ljspencer.dev
 
-* This portfolio website was an assignment I had to make for class, but it is also my main website.
-
-As I continue to learn I will definitly continue to build this page to be better than it is now.
+Welcome to the repo for my Portfolio website! I'm continuing to learn and grow my website as I grow as a developer. If you have any questions feel free to reach out to me! 
