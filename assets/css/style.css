@@ -264,7 +264,6 @@ main button:hover {
 }
 
 .project:hover {
-    image-rendering: crisp-edges;
     transform: scale(1.03);
 }
 

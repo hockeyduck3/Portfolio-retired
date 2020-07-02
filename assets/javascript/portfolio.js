@@ -17,6 +17,11 @@ $('.project').click(function(event) {
          const projectPick = $(this).data('name');
       
          findProject(projectPick);
+
+         // This will make sure that the css goes back to normal after the project cards have been hidden
+         setTimeout(() => {
+            $(this).css('transform', '');
+         }, 2000);
       }, 300); 
    } 
    
